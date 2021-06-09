@@ -15,9 +15,9 @@ head(Grunfeld,25)
 
 
 # 以下モデルを推定する
-# inv_it = α_i + β_1value_it + β2capital_it +_εit
+# inv_it = α_i + β_1value_it + β2capital_it +ε_it
 # model="pooling"はPooled OLSで推定
-# 引数はモデルの式、データ、モデル形式
+# 引数は(モデルの式、データ、モデル形式)
 result1=plm(inv~value+capital,data=Grunfeld,model="pooling")
 
 summary(result1)
